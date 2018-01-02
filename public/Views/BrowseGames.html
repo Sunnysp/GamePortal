@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+  <link rel="stylesheet" href="../Styles/Account.css">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-top-search-group">
+        <i class="material-icons">&#xE8B6;</i>
+        <input type="text" placeholder="Search"/>
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">notifications</div>
+        </a>
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">&#xE8CC;</div>
+        </a>
+        <!--<a class="mdl-navigation__link account-group" href=""><i class="material-icons">account_circle</i><span>User Firstname</span></a>-->
+        <a class="mdl-navigation__link cl408c73" href="../Views/Login.html">Sign in</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href=""><i class="material-icons">home</i>Home</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8CC;</i>My cart</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87D;</i>My wishlist</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE889;</i>Purchase history</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8A1;</i>My wallet & cards</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8B8;</i>Settings</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87F;</i>Send feedback</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE887;</i>FAQ</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content result-container"><!-- Your content goes here -->
+
+      <section class="sc-recent-1">
+        <div class="mdl-grid ">
+          <div class="mdl-cell mdl-cell--8-col">
+            <h5 class="result-count">Recent Uploads</h5>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              view all
+            </button>
+          </div>
+        </div>
+        <div class="result-list-outer">
+          <div class="mdl-grid result-list-row">
+            <div class="list-navigation swipe-lft">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="left-button">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </button>
+            </div>
+
+            <ul class="internal">
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="list-navigation swipe-rgt visible">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="right-button">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-recent-1">
+        <div class="mdl-grid ">
+          <div class="mdl-cell mdl-cell--8-col">
+            <h5 class="result-count">New Releases</h5>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              view all
+            </button>
+          </div>
+        </div>
+        <div class="result-list-outer">
+          <div class="mdl-grid result-list-row">
+            <div class="list-navigation swipe-lft">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="left-button">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </button>
+            </div>
+
+            <ul class="internal">
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="list-navigation swipe-rgt visible">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="right-button">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-recent-1">
+        <div class="mdl-grid ">
+          <div class="mdl-cell mdl-cell--8-col">
+            <h5 class="result-count">Top PC games</h5>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              view all
+            </button>
+          </div>
+        </div>
+        <div class="result-list-outer">
+          <div class="mdl-grid result-list-row">
+            <div class="list-navigation swipe-lft">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="left-button">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </button>
+            </div>
+
+            <ul class="internal">
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins
+                      <span
+                          class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="list-navigation swipe-rgt visible">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="right-button">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-recent-1">
+        <div class="mdl-grid ">
+          <div class="mdl-cell mdl-cell--8-col">
+            <h5 class="result-count">Top XBox games</h5>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              view all
+            </button>
+          </div>
+        </div>
+        <div class="result-list-outer">
+          <div class="mdl-grid result-list-row">
+            <div class="list-navigation swipe-lft">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="left-button">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </button>
+            </div>
+
+            <ul class="internal">
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="list-navigation swipe-rgt visible">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="right-button">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-recent-1">
+        <div class="mdl-grid ">
+          <div class="mdl-cell mdl-cell--8-col">
+            <h5 class="result-count">Top play station games</h5>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              view all
+            </button>
+          </div>
+        </div>
+        <div class="result-list-outer">
+          <div class="mdl-grid result-list-row">
+            <div class="list-navigation swipe-lft">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="left-button">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </button>
+            </div>
+
+            <ul class="internal">
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="list-navigation swipe-rgt visible">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="right-button">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-recent-1">
+        <div class="mdl-grid ">
+          <div class="mdl-cell mdl-cell--8-col">
+            <h5 class="result-count">Heavy shooter</h5>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              view all
+            </button>
+          </div>
+        </div>
+        <div class="result-list-outer">
+          <div class="mdl-grid result-list-row">
+            <div class="list-navigation swipe-lft">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="left-button">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </button>
+            </div>
+
+            <ul class="internal">
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="list-navigation swipe-rgt visible">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="right-button">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-recent-1">
+        <div class="mdl-grid ">
+          <div class="mdl-cell mdl-cell--8-col">
+            <h5 class="result-count">Highly strategic</h5>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              view all
+            </button>
+          </div>
+        </div>
+        <div class="result-list-outer">
+          <div class="mdl-grid result-list-row">
+            <div class="list-navigation swipe-lft">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="left-button">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </button>
+            </div>
+
+            <ul class="internal">
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                        class="paragraph-end"></span></h6>
+                    <p>Action/Adventure</p>
+                    <div class="star-ratings-css">
+                      <div class="star-ratings-css-top" style="width: 88%">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="star-ratings-css-bottom">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div>
+                    <span class="game-price fl-right">&#8377;1200</span>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border text-right">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="list-navigation swipe-rgt visible">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="right-button">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+
+<script defer src="../Scripts/material.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="../Scripts/basic-utility.js"></script>
+<script>
+  function toggleFilter() {
+    $('.filter-container').toggleClass('expanded');
+  }
+  $(document).ready(function () {
+    var delay = 200;
+    $('.result-list-row').each(function (index, el) {
+      $(el).delay(delay * index).animate({'margin-top': '0', 'opacity': '1'}, 500);
+    });
+
+    $('#right-button').click(function () {
+
+      $('.internal').animate({
+        scrollLeft: "+=500px"
+      }, 800, function () {
+        $('.swipe-lft').addClass('visible');
+
+        if ($('.internal').scrollLeft() > 560) {
+          $('.swipe-rgt').removeClass('visible');
+        }
+      });
+
+    });
+
+    $('#left-button').click(function () {
+      $('.internal').animate({
+        scrollLeft: "-=500px"
+      }, 800, function () {
+        if ($('.internal').scrollLeft() == 0) {
+          $('.swipe-lft').removeClass('visible');
+        }
+      });
+
+    });
+
+
+  });
+
+
+</script>
+</body>
+</html>

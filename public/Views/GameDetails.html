@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+  <link rel="stylesheet" href="../Styles/Account.css">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-top-search-group">
+        <i class="material-icons">&#xE8B6;</i>
+        <input type="text" placeholder="Search"/>
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">notifications</div>
+        </a>
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">&#xE8CC;</div>
+        </a>
+        <!--<a class="mdl-navigation__link account-group" href=""><i class="material-icons">account_circle</i><span>User Firstname</span></a>-->
+        <a class="mdl-navigation__link cl408c73" href="../Views/Login.html">Sign in</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href=""><i class="material-icons">home</i>Home</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8CC;</i>My cart</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87D;</i>My wishlist</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE889;</i>Purchase history</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8A1;</i>My wallet & cards</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8B8;</i>Settings</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87F;</i>Send feedback</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE887;</i>FAQ</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content result-container"><!-- Your content goes here -->
+      <div class="game-bg-video">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored play-trailer" id="tt-play">
+          <i class="material-icons">play_arrow</i>
+        </button>
+        <div class="mdl-tooltip" data-mdl-for="tt-play">
+          Play trailer
+        </div>
+        <div class="buy-now-section text-right">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+            buy now
+          </button>
+
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab no-bg more-option">
+            <i class="material-icons">&#xE5D4;</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="mdl-grid game-info-content-a">
+
+        <div class="tabs">
+          <div class="tabs-header">
+            <div class="border"></div>
+            <ul>
+              <li class="active"><a href="#overview" tab-id="1">overview</a></li>
+              <li><a href="#concept-art" tab-id="2">concept art</a></li>
+              <li><a href="#system-requirement" tab-id="3">system requirement</a></li>
+              <li><a href="#developer" tab-id="4">developer</a></li>
+              <li><a href="#pricing" tab-id="5">pricing</a></li>
+            </ul>
+
+          </div>
+          <div class="tabs-content">
+            <div tab-id="1" class="tab active">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
+              dictum enim. Aliquam pharetra efficitur quam, eu posuere ipsum venenatis a. Sed gravida eu sapien et
+              pretium. Phasellus ullamcorper metus in dolor pellentesque lacinia. Nulla lacus risus, porta at purus id,
+              faucibus scelerisque erat. Praesent congue sagittis nibh ut lobortis. Donec elit ante, lacinia sed sem
+              non, condimentum pharetra leo. In eu fermentum felis. Suspendisse nec odio id tellus condimentum cursus ac
+              ac orci. Etiam malesuada condimentum magna in consequat.
+            </div>
+            <div tab-id="2" class="tab">2. Donec vel nibh tortor. Donec ut nunc luctus, maximus metus at, accumsan
+              purus.
+            </div>
+            <div tab-id="3" class="tab">
+              <div class="mdl-grid ">
+                <div class="mdl-cell mdl-cell--6-col sys-req">
+                  <h6 style="color: #BD4548;">MINIMUM</h6>
+                  <div class="mdl-grid ">
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <span><b>OS</b></span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col text-right">
+                      <span>OS</span>
+                    </div>
+                    <hr>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <span>Processor</span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col text-right">
+                      <span>56</span>
+                    </div>
+                    <hr>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <span>Ram</span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col text-right">
+                      <span>4GB</span>
+                    </div>
+                    <hr>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <span>Video card</span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col text-right">
+                      <span></span>
+                    </div>
+                    <hr>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <span>Free disk space</span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col text-right">
+                      <span>30GB</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col sys-req">
+                  <h6 style="color: #2E7D32;">RECOMENDED</h6>
+                </div>
+              </div>
+            </div>
+            <div tab-id="4" class="tab">4. Maecenas felis risus, mattis a hendrerit ut, placerat lobortis risus. Etiam
+              vel ipsum ut quam interdum volutpat egestas vitae metus.
+            </div>
+            <div tab-id="5" class="tab">5. Pellentesque fermentum diam sed ipsum convallis tincidunt. Sed feugiat magna
+              non sollicitudin rutrum. Fusce condimentum tellus ut felis tincidunt, nec fringilla ex ornare. Cras congue
+              enim vitae placerat faucibus. Donec ac libero nulla. Suspendisse scelerisque vitae sem at tempor. Mauris
+              vel turpis dui. Etiam porttitor at nisi vel imperdiet. Phasellus pulvinar lobortis commodo. Integer et
+              ornare enim, in fringilla purus. Mauris dignissim velit vel pellentesque porttitor. Mauris molestie turpis
+              eget nunc facilisis lacinia.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+<script defer src="../Scripts/material.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="../Scripts/basic-utility.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.game-bg-video').animate({'opacity':'1'},2000);
+    var contentStart = $('.game-bg-video').height() - 64;
+    $('.game-info-content-a').css({'margin-top': contentStart + 'px'});
+
+
+    // Intial Border Position
+    var activePos = $('.tabs-header .active').position();
+
+    // Change Position
+    function changePos() {
+
+      // Update Position
+      activePos = $('.tabs-header .active').position();
+
+      // Change Position & Width
+      $('.border').stop().css({
+        left: activePos.left,
+        width: $('.tabs-header .active').width()
+      });
+    }
+
+    changePos();
+
+    // Intial Tab Height
+    var tabHeight = $('.tab.active').height();
+
+    // Animate Tab Height
+    function animateTabHeight() {
+
+      // Update Tab Height
+      tabHeight = $('.tab.active').height();
+
+      // Animate Height
+      $('.tabs-content').stop().css({
+        height: tabHeight + 'px'
+      });
+    }
+
+    animateTabHeight();
+
+    // Change Tab
+    function changeTab() {
+      var getTabId = $('.tabs-header .active a').attr('tab-id');
+
+      // Remove Active State
+      $('.tab').stop().fadeOut(300, function () {
+        // Remove Class
+        $(this).removeClass('active');
+      }).hide();
+
+      $('.tab[tab-id=' + getTabId + ']').stop().fadeIn(300, function () {
+        // Add Class
+        $(this).addClass('active');
+
+        // Animate Height
+        animateTabHeight();
+      });
+    }
+
+    // Tabs
+    $('.tabs-header a').on('click', function (e) {
+      e.preventDefault();
+
+      // Tab Id
+      var tabId = $(this).attr('tab-id');
+
+      // Remove Active State
+      $('.tabs-header a').stop().parent().removeClass('active');
+
+      // Add Active State
+      $(this).stop().parent().addClass('active');
+
+      changePos();
+
+      // Update Current Itm
+      tabCurrentItem = tabItems.filter('.active');
+
+      // Remove Active State
+      $('.tab').stop().fadeOut(300, function () {
+        // Remove Class
+        $(this).removeClass('active');
+      }).hide();
+
+      // Add Active State
+      $('.tab[tab-id="' + tabId + '"]').stop().fadeIn(300, function () {
+        // Add Class
+        $(this).addClass('active');
+
+        // Animate Height
+        animateTabHeight();
+      });
+    });
+
+    // Tab Items
+    var tabItems = $('.tabs-header ul li');
+
+    // Tab Current Item
+    var tabCurrentItem = tabItems.filter('.active');
+
+  });
+</script>
+</body>
+</html>

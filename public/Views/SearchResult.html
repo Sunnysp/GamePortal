@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+  <link rel="stylesheet" href="../Styles/Account.css">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-top-search-group">
+        <i class="material-icons">&#xE8B6;</i>
+        <input type="text" placeholder="Search"/>
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">notifications</div>
+        </a>
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">&#xE8CC;</div>
+        </a>
+        <!--<a class="mdl-navigation__link account-group" href=""><i class="material-icons">account_circle</i><span>User Firstname</span></a>-->
+        <a class="mdl-navigation__link cl408c73" href="../Views/Login.html">Sign in</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href=""><i class="material-icons">home</i>Home</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8CC;</i>My cart</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87D;</i>My wishlist</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE889;</i>Purchase history</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8A1;</i>My wallet & cards</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8B8;</i>Settings</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87F;</i>Send feedback</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE887;</i>FAQ</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content result-container"><!-- Your content goes here -->
+      <div class="mdl-grid ">
+        <div class="mdl-cell mdl-cell--8-col">
+          <h5 class="result-count">1802 Results found</h5>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col text-right">
+          <button class="filter-btn" onclick="toggleFilter();"><i class="material-icons">&#xE152;</i></button>
+        </div>
+        <div class="mdl-grid filter-container">
+          <div class="mdl-cell mdl-cell--2-col">
+            <h7 class="filter-heading">RELEASE DATE</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  This year
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Last year
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Older
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="mdl-cell mdl-cell--2-col">
+            <h7 class="filter-heading">Genre</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Action
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Adventure
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Fantasy
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  FPS(First Person Shooter)
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Racing
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Real-time strategy
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Sandbox RPG
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Sports
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Real-time strategy
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Stealth
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Survival
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Survival horror
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Tactical Shooter
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-cell mdl-cell--2-col">
+            <h7 class="filter-heading">ram</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Below 4 GB
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  4 GB
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  6 GB
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  8 GB
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Above 8 GB
+                </a>
+              </li>
+            </ul>
+            <h7 class="filter-heading">Platform</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Windows
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Playstation
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  X-Box
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-cell mdl-cell--2-col">
+            <h7 class="filter-heading">graphics</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  No graphics
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  1 GB
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  2 GB
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  4 GB
+                </a>
+              </li>
+            </ul>
+            <h7 class="filter-heading">Mode</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Single player
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Multi player
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Co-op
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-cell mdl-cell--2-col">
+            <h7 class="filter-heading">sort by</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  A - Z
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Rating
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Release date
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="mdl-cell mdl-cell--2-col">
+            <h7 class="filter-heading">Publisher</h7>
+            <hr>
+            <ul class="demo-list-item mdl-list filter-list">
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Activision
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Bethesda
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Capcom
+                </a>
+              </li>
+
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  EA Sports
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Firemonkeys
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  IO Interactive
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Interactive Studios
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Konami
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Lionhead Studios
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  NVidea
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Sega
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  The Coalition
+                </a>
+              </li>
+              <li class="mdl-list__item">
+                <a class="mdl-list__item-primary-content">
+                  Ubisoft
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="filter-tags-wrapper">
+
+      </div>
+      <div class="result-list-outer">
+        <div class="mdl-grid result-list-row">
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins <span
+                  class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg" title="Assassin's Creed: Origins">Assassin's Creed: Origins<span
+                  class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg">Assassin's Creed: Origins <span class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg">Assassin's Creed: Origins <span class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg">Assassin's Creed: Origins <span class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg">Assassin's Creed: Origins <span class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-grid result-list-row">
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                <i class="material-icons">favorite</i>
+              </button>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg">Assassin's Creed: Origins <span class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h6 class="mdl-card-heading no-marg">Assassin's Creed: Origins <span class="paragraph-end"></span></h6>
+              <p>Action/Adventure</p>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 88%">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              <span class="game-price fl-right">&#8377;1200</span>
+            </div>
+            <div class="mdl-card__actions mdl-card--border text-right">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                add to cart
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+<script defer src="../Scripts/material.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="../Scripts/basic-utility.js"></script>
+<script>
+  function toggleFilter() {
+    $('.filter-container').toggleClass('expanded');
+  }
+  $(document).ready(function () {
+    var delay = 200;
+    $('.result-list-row').each(function (index, el) {
+      $(el).delay(delay * index).animate({'margin-top': '0', 'opacity': '1'}, 500);
+    });
+    $('.mdl-list__item-primary-content').click(function () {
+      var tagValue = $(this).text();
+      createFilterTag(tagValue);
+    });
+  });
+
+
+
+  function createFilterTag(tagValue) {
+    var _outerSpan = document.createElement("span");
+    _outerSpan.className = "mdl-chip mdl-chip--deletable filter-tags";
+    _outerSpan.setAttribute("id", tagValue);
+    var _innerSpan = document.createElement("span");
+    _innerSpan.className = "mdl-chip__text";
+    _innerSpan.innerHTML = tagValue;
+    _outerSpan.appendChild(_innerSpan);
+
+    var _btn = document.createElement("button");
+    _btn.className = "mdl-chip__action delete-chip";
+    var _icon = document.createElement("i");
+    _icon.className = "material-icons";
+    _icon.innerText = "cancel";
+    _btn.appendChild(_icon);
+
+    _outerSpan.appendChild(_btn);
+    document.querySelector('.filter-tags-wrapper').appendChild(_outerSpan);
+    refreshFilterChip();
+  }
+
+</script>
+</body>
+</html>

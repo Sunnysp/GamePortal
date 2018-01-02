@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+</head>
+<body bgcolor="#ececec">
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="mdl-grid login-grid">
+        <div class="mdl-cell mdl-cell--4-col">
+          <div id="p1" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+          <div class="mdl-grid login-panel">
+
+            <div class="mdl-cell mdl-cell--10-col">
+              <h4>Create new account</h4>
+            </div>
+
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input required" type="text" id="sample3" onkeypress="showError(this,false);" name="first_name">
+                <label class="mdl-textfield__label" for="sample3">First name</label>
+              </div>
+              <span class="error-msg">Please enter a valid email</span>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input required" type="text" id="sample3" onkeypress="showError(this,false);" name="last_name">
+                <label class="mdl-textfield__label" for="sample3">Last name</label>
+              </div>
+              <span class="error-msg">Please enter a valid password</span>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input required email" type="text" id="sample3" onkeypress="showError(this,false);" name="email">
+                <label class="mdl-textfield__label" for="sample3">Email address</label>
+              </div>
+              <span class="error-msg">Please enter a valid password</span>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input required" type="password" id="sample3" onkeypress="showError(this,false);" name="password">
+                <label class="mdl-textfield__label" for="sample3">Password</label>
+              </div>
+              <span class="error-msg">Please enter a valid password</span>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input required" type="password" id="sample3" onkeypress="showError(this,false);">
+                <label class="mdl-textfield__label" for="sample3">Confirm password</label>
+              </div>
+              <span class="error-msg">Please enter a valid password</span>
+            </div>
+            <div class="mdl-cell mdl-cell--8-col ">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                <span class="mdl-checkbox__label">I accept the Terms & Conditions.</span>
+              </label>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col text-right">
+              <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect  mdl-button--colored" id="signup">
+                create
+              </button>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <p>Already have an account? <a href="../Views/Login.html" class="text-link">Sign in</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+<script defer src="../Scripts/material.min.js"></script>
+<script src="../Scripts/jquery-2.1.1.js"></script>
+<script  src="../Scripts/validation.js"></script>
+<script>
+
+    $(document).ready(function () {
+      $('#signup').click(function () {
+        if (validateForm()) {
+          $('.mdl-progress').show();
+          //make ajax call here
+            $.ajax({
+                type:"post",
+                url:"/UserRegistration",
+                data:{
+                    firstName: $('input[name=first_name]').val(),
+                    lastName: $('input[name=last_name]').val(),
+                    email: $("input[name=email]").val(),
+                    password: $("input[name=password]").val()
+                },
+                success:function(response){
+                    console.log("Api running...")
+                }
+
+            })
+        } else {
+
+        }
+      })
+    });
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

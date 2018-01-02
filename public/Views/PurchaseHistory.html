@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+  <link rel="stylesheet" href="../Styles/Account.css">
+</head>
+<body bgcolor="#eee">
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-top-search-group">
+        <i class="material-icons">&#xE8B6;</i>
+        <input type="text" placeholder="Search"/>
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">notifications</div>
+        </a>
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">&#xE8CC;</div>
+        </a>
+        <!--<a class="mdl-navigation__link account-group" href=""><i class="material-icons">account_circle</i><span>User Firstname</span></a>-->
+        <a class="mdl-navigation__link cl408c73" href="../Views/Login.html">Sign in</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href=""><i class="material-icons">home</i>Home</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8CC;</i>My cart</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87D;</i>My wishlist</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE889;</i>Purchase history</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8A1;</i>My wallet & cards</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8B8;</i>Settings</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87F;</i>Send feedback</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE887;</i>FAQ</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content result-container"><!-- Your content goes here -->
+      <div class="mdl-grid ">
+        <div class="empty-cart-banner hidden">
+          <div class="mdl-cell mdl-cell--12-col text-center">
+            <img src="../Assets/Images/cart-logo.png"/>
+            <h4>You have no purchase history</h4>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect ">
+              start browsing
+            </button>
+          </div>
+        </div>
+
+        <section class="cart-container">
+          <h4>Purchase History <br><span style="font-size:16px;color:gray;vertical-align: middle">5 Items</span></h4>
+
+          <div class="mdl-grid cart-item-outer purchase-list">
+            <div class="mdl-cell mdl-cell--1-col text-center">
+              <img src="../Assets/Images/assassin-creed-origins.jpg" class="image-responsive"/>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col ">
+              <h5 class="cart-item-heading">Assassin's Creed:Origins</h5>
+              <p>Action / Adventure</p>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col ">
+              <span><b>Ordered on:</b> 25/05/2017</span>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col ">
+              <span><b>Delivered on:</b> 25/05/2017</span>
+              <p class="cl408c73">Your package has been delivered.</p>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col text-right">
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">close</i>
+              </button>
+              <h5> &#8377;<span>1500</span></h5>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <!--Confirmation modal HTML-->
+
+    <div class="dialog-wrapper" id="removeCartItem">
+      <div class="mdl-grid dialog-main confirmation-dialog">
+        <div class="mdl-cell mdl-cell--12-col dialog-header">
+          <h3 class="modal-title">Remove item from cart?</h3>
+        </div>
+
+        <div class="mdl-cell mdl-cell--12-col dialog-body">
+          <p>The following item will be removed from cart.Although you can add it back to cart from our browsing section</p>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-footer text-right">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            cancel
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            remove
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+<script defer src="../Scripts/material.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="../Scripts/basic-utility.js"></script>
+<script src="../Scripts/modal-script.js"></script>
+<script>
+
+</script>
+</body>
+</html>

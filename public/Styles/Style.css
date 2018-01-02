@@ -1,0 +1,1327 @@
+/*=================================================
+START OF COMOMON CSS
+===================================================*/
+
+html, body {
+    font-family: roboto;
+    color: #4e5359;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.cl29586C {
+    background: #567583;
+    color: white;
+}
+
+.cl408c73 {
+    color: #408c73 !important;
+}
+
+.clD2A456 {
+    background: #D2A456;
+    color: white;
+}
+
+.cl448aff {
+    color: #448aff;
+}
+
+.bg448aff {
+    background: #448aff;
+    color: #fff;
+}
+
+.fl-right {
+    float: right;
+}
+
+.fl-left {
+    float: left;
+}
+
+.pad_rt {
+    padding-right: 50px;
+}
+
+.pad_lt {
+    padding-left: 50px;
+}
+
+.marg-lf {
+    margin-left: 40px;
+}
+.v-gap{
+    margin:18px 0;
+}
+.no-marg {
+    margin: 0;
+}
+
+.width40 {
+    width: 40px !important;
+}
+
+.width60 {
+    width: 60px !important;
+}
+
+.no-bg {
+    background: none !important;
+    box-shadow: none;
+}
+
+.image-responsive {
+    width: 100%;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.material-icons {
+    vertical-align: text-bottom;
+}
+
+.mdl-layout-title {
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+}
+
+.mdl-layout__header, .mdl-layout__header--scroll {
+    background: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) !important;
+    color: #777;
+}
+
+.mdl-layout__header-row .mdl-navigation__link, .mdl-layout__drawer-button {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.mdl-layout__drawer .mdl-navigation__link > i {
+    margin-right: 16px;
+}
+
+.mdl-layout__drawer-button {
+    outline: none;
+}
+
+.mdl-button--colored {
+    background: #448aff !important;
+    color: white !important;
+}
+
+.mdl-textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+    height: 150px;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.welcome-banner {
+    /*background:#f8f8f8;*/
+    max-width: 100%;
+
+    /*min-height:500px;*/
+    /*max-height:500px;*/
+    margin: 0% auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: url('../Assets/Images/cover.jpg') no-repeat;
+
+    background-size: cover;
+}
+
+.mdl-checkbox__label {
+    font-size: 14px !important;
+}
+
+.welcome-banner > div {
+    padding: 15% 5%;
+}
+
+.welcome-banner > div > h3 {
+    font-size: 2.75rem;
+    font-weight: 300;
+}
+
+.banner-sub-heading {
+    font-weight: 400;
+    color: #706d6d;
+    font-size: 1.5rem;
+}
+
+.read-more-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -28px;
+    margin-bottom: -28px;
+
+}
+
+.components-wrapper {
+    padding: 2.5rem;
+}
+
+.platform-list li {
+    display: inline-block;
+    width: 150px;
+    font-size: 1.5rem;
+}
+
+.platform-list li img {
+    margin-bottom: 20px;
+}
+
+.section {
+    max-width: 40%;
+    padding: 2% 0;
+    margin: 5% auto;
+}
+
+.test-gear {
+    padding: 2% 0;
+}
+
+.test-gear p {
+    width: 50%;
+    margin: 15px auto;
+}
+
+.section img {
+    width: 100%;
+}
+
+.section-component-heading {
+    font-weight: 300;
+    font-size: 2.75rem;
+    line-height: 1.5;
+}
+
+.site-subheading {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section-para {
+    font-size: 1.3rem;
+    /*width: 70%;*/
+    font-weight: 300;
+    line-height:1.8;
+
+}
+
+.grid-2 {
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    max-height: 700px;
+    background: #f8f8f8;
+    background-size: cover;
+    /*opacity:0.4;*/
+    display: flex;
+    align-items: center;
+}
+
+.travel-section > h2 {
+    color: white;
+}
+
+.grid-3 {
+    /*background: #ececec;*/
+}
+
+.grid-3 .section-para {
+    text-align: center;
+    width: 100%;
+}
+.publisher-preview-container{
+    width:80%;
+    margin:auto;
+    border-spacing: 70px;
+}
+.publisher-preview-list{
+    display:table-cell;
+    width:150px;
+    padding:2%;
+    vertical-align: middle;
+    border-radius:50%;
+    background:#eee;
+}
+.publisher-preview-list > img{
+    width:100%;
+}
+.mdl-textfield {
+    width: 100%;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    color: #448aff;
+}
+
+.mdl-textfield__label:after {
+    background: #448aff;
+}
+
+.modal-title {
+    font-weight: 400;
+    font-size: 1.45rem;
+    margin: 0;
+}
+
+.error-msg {
+    color: #BD4548;
+    display: none;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.md-select {
+    /*Demo css do not add to your project*/
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+    /*--*/
+    display: block;
+    margin: 10px 0 8px 0;
+    padding-bottom: 2px;
+    /*  position: relative;*/
+    min-width: 180px;
+}
+
+.md-select *, .md-select :after, .md-select :before {
+    box-sizing: border-box;
+}
+
+.md-select [type=button] {
+    background: #fff;
+    /*border-color: rgba(0, 0, 0, 0.12);*/
+    /*border-width: 0 0 1px 0;*/
+    border: none;
+    color: rgba(0, 0, 0, 0.73);
+    cursor: default;
+    display: block;
+    font-size: 16px;
+    line-height: 38px;
+    padding: 2px 0 1px 16px;
+    position: relative;
+    text-align: left;
+    text-shadow: none;
+    width: 100%;
+    z-index: 1;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.md-select [type=button]:focus, .md-select [type=button]:hover {
+    background: #eee;
+}
+
+.md-select [type=button]:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 4px);
+    float: right;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    width: 0;
+    height: 0;
+    /*padding-right: 16px;*/
+}
+
+.md-select ul[role=listbox] {
+    background-color: white;
+    cursor: default;
+    list-style: none;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 0;
+    max-height: 0;
+    position: absolute;
+    padding: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+}
+
+.md-select ul[role=listbox] li {
+    height: 48px;
+    margin: 0;
+    padding: 10px 16px;
+    outline: none;
+    overflow: hidden;
+}
+
+.md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.md-select.active ul {
+    max-height: 220px;
+    overflow: hidden;
+    padding: 8px 0 8px 0px;
+    z-index: 2;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#car {
+    max-height: 570px;
+    overflow: auto;
+}
+
+#car li {
+    padding: 16px 0;
+}
+
+#car li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-disabled {
+    pointer-events: none;
+    color: #ccc !important;
+}
+
+.mdl-top-search-group {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px 24px;
+    height: 40px;
+    margin: 0 15%;
+    background: #eee;
+}
+
+.mdl-top-search-group input {
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 0 20px;
+    height: 45px;
+    font-size: 16px;
+    background: none;
+}
+
+.tabs {
+    z-index: 15px;
+    position: relative;
+    background: #FFFFFF;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+
+.tabs-header {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+.tabs-header .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #4285F4;
+    width: auto;
+    height: 2px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.tabs-header ul {
+    margin: 0;
+    float: right;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.tabs-header li {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.tabs-header a {
+    z-index: 1;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    color: #555;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tabs-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #4285F4;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    color: #FFFFFF;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tabs-nav:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 0 0 20px 10px #4285F4;
+}
+
+.tabs-nav i {
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.tabs-content {
+    position: relative;
+    padding: 15px 20px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.tabs-content:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 0 20px 10px #FFFFFF;
+}
+
+.tabs-content .tab {
+    display: none;
+}
+
+.tabs-content .tab.active {
+    display: block;
+}
+
+/*=================================================
+END OF COMMON CSS
+===================================================*/
+
+
+/*=================================================
+START OF CUSTOM SCROLL BAR CSS
+===================================================*/
+
+.for-custom-scroll::-webkit-scrollbar {
+    width: 3px;
+    padding-right:5px;
+    background-color: transparent;
+}
+
+.for-custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #aaa;
+}
+
+
+/*=================================================
+END OF CUSTOM SCROLL BAR CSS
+===================================================*/
+
+
+/*=================================================
+START OF TOOLTIP CSS
+===================================================*/
+
+.tooltip-outer{
+	position:absolute;
+	background:#4CAF50;
+	max-width:300px;
+	padding:10px 20px;
+	display:none;
+	z-index:999;
+	border-radius:4px;
+	box-shadow:0 0 4px 0 rgba(50,50,50,0.2);
+}
+.tooltip-outer h5{
+	color:white;
+	font-weight:normal;
+}
+.tooltip-outer p{
+	color:white;
+    font-weight:100;
+	font-size:13px;
+}
+.tooltip-outer button{
+	color:white;
+}
+
+/*=================================================
+END OF TOOLTIP CSS
+===================================================*/
+
+/*=================================================
+START OF SNACKBAR TOAST CSS
+===================================================*/
+
+.mdl-js-snackbar.mdl-snackbar{
+    margin-bottom:30px;
+}
+
+/*=================================================
+END OF SNACKBAR TOAST CSS
+===================================================*/
+
+/*=================================================
+START OF AUTOCOMPLETE SEARCH CSS
+===================================================*/
+
+.autocomplete-suggestions {
+    width:40% !important;
+    background: #fff;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 8px 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: #ffffff;
+    -webkit-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+.autocomplete-suggestions .autocomplete-suggestion{
+    box-sizing: border-box;
+    padding: 0 16px;
+    font-size:15px;
+    line-height: 48px;
+    text-overflow: ellipsis;
+    cursor:pointer;
+    height:48px;
+}
+.autocomplete-suggestion:hover{
+    background:#eee;
+}
+.sugession-image{
+    width:40px;
+    height:40px;
+    margin-right:15px;
+    border-radius: 5px;
+}
+/*=================================================
+END OF AUTOCOMPLETE SEARCH CSS
+===================================================*/
+
+/*=================================================
+START OF SIGNUP CSS
+===================================================*/
+
+.progress-circle {
+    font-size: 9px !important;
+    margin: 20px 0;
+    position: relative;
+    padding: 0;
+    width: 5em;
+    height: 5em;
+    background-color: #F2E9E1;
+    border-radius: 50%;
+    line-height: 5em;
+}
+
+.progress-circle span {
+    position: absolute;
+    line-height: 3em;
+    width: 3em;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    color: #53777A;
+    z-index: 2;
+}
+
+.left-half-clipper {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    clip: rect(0, 5em, 5em, 2.5em);
+}
+
+.progress-circle:after {
+    border: none;
+    position: absolute;
+    top: 0.35em;
+    left: 0.35em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 4.3em;
+    height: 4.3em;
+    background-color: white;
+    content: " ";
+}
+
+.value-bar {
+    position: absolute;
+    clip: rect(0, 2.5em, 5em, 0);
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 0.45em solid #53777A;
+    /* background-color: #4D642D; */
+    box-sizing: border-box;
+}
+
+.progress-circle.p10 .value-bar {
+    transform: rotate(96deg);
+}
+
+/*=================================================
+END OF SIGNUP CSS
+===================================================*/
+
+/*=================================================
+START OF LOGIN CSS
+===================================================*/
+
+.login-grid {
+    height: calc(100vh - 16px);
+    min-height: calc(100vh - 16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-grid > div {
+    background: #fff;
+    width: 30%;
+    height: auto;
+    min-height: 70%;
+    box-shadow: 0 0 8px 0 rgba(100, 100, 100, 0.5);
+}
+
+.login-panel {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text-link {
+    color: #448aff;
+    /*line-height:2.5;*/
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.mdl-progress {
+    display: none;
+}
+
+/*=================================================
+END OF LOGIN CSS
+===================================================*/
+
+/*=================================================
+START OF TARIFF CSS
+===================================================*/
+
+.dialog-wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 2000;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.4);
+}
+
+.dialog-wrapper .dialog-main {
+    background: white;
+    /*height:70%;*/
+    padding: 1.2rem;
+    margin-top: 10%;
+    max-height: 80%;
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.confirmation-dialog {
+    width: 25%;
+}
+
+.dialog-header {
+    height: 10%;
+}
+
+.dialog-body {
+    height: calc(90% - 24px);
+}
+
+.dialog-main ul {
+    margin: 0 -16px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.dialog-main ul li {
+    width: 100%;
+}
+
+.dialog-main ul li:hover {
+    background: #eee;
+    cursor: pointer;
+
+}
+
+.dialog-footer button {
+    /*padding: 0px 10px;*/
+    font-weight: 500 !important;
+    color: #888;
+    font-size: 1rem;
+}
+
+/*=================================================
+END OF TARIFF CSS
+===================================================*/
+
+/*=================================================
+START OF FOOTER CSS
+===================================================*/
+
+.mdl-mega-footer__link-list li i {
+    font-size: 18px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+/*=================================================
+START OF ERROR PAGE CSS
+===================================================*/
+.error-page, .maintain-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.error-page .error-logo {
+    width: 100px;
+}
+
+.error-page h3 {
+    color: #777;
+}
+
+.error-page p {
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.error-page h5 {
+    font-weight: 400;
+    color: #999;
+}
+
+.maintain-page h3 {
+    color: white;
+}
+
+.maintain-page p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.maintain-logo {
+    width: 200px;
+}
+
+.maintain-page button {
+    background: #555 !important;
+}
+
+/*=================================================
+END OF ERROR PAGE CSS
+===================================================*/
+
+/*=================================================
+START OF SEARCH RESULT CSS
+===================================================*/
+
+.result-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.result-container .result-count {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.filter-btn {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 24px 0 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.filter-container {
+    width: 100%;
+    max-height: 0;
+    padding: 0 15px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: max-height 0.2s ease, padding 0.2s ease;
+
+}
+
+.filter-container.expanded {
+    padding: 15px;
+    max-height: 500px;
+}
+
+.filter-container .filter-heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #3d3d3d;
+}
+
+.filter-list li {
+    min-height: 30px;
+    padding: 10px 0;
+}
+
+.filter-list li a {
+    color: gray !important;
+    font-size: 14px;
+    font-weight: 300;
+}
+.filter-tags-wrapper{
+    padding:15px;
+}
+.filter-tags{
+    margin-right:10px;
+}
+.result-list-outer .demo-card-square.mdl-card {
+    width: 180px;
+    margin: 8px;
+    height: 300px;
+}
+
+.demo-card-square > .mdl-card__title {
+    color: #fff;
+    height: 180px;
+    background: url('../Assets/Images/assassin-creed-origins.jpg') center no-repeat / cover;
+    align-items: flex-end;
+    padding:0;
+}
+.demo-card-square > .mdl-card__title > .mdl-button--mini-fab{
+    margin-bottom: -15px;
+    margin-right: 15px;
+    min-width:30px;
+    width:30px;
+    height:30px;
+    background:#e2df28 !important;
+}
+.demo-card-square > .mdl-card__title > .mdl-button--mini-fab > i{
+    font-size: 16px;
+}
+.mdl-card__supporting-text {
+    width: auto;
+    overflow: visible;
+}
+
+.mdl-card-heading {
+    position: relative;
+    color: #222;
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.mdl-card-heading .paragraph-end {
+    height: 19px;
+    width: 45px;
+    position: absolute;
+    right: 0;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00ffffff', EndColorStr='#ffffff');
+    bottom: 0;
+    height: 25px;
+    max-height: 100%;
+
+}
+
+.mdl-card__supporting-text > p {
+    margin: 5px 0;
+}
+
+.game-price {
+    font-weight: bold;
+    color: red;
+    margin: 2px 0;
+}
+
+.result-list-row {
+    position:relative;
+    opacity: 0;
+    margin-top: 100px;
+}
+
+.sc-recent-1{
+    border-bottom:1px solid #ccc;
+}
+
+.result-list-row .internal{
+    overflow:hidden;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    display: inherit;
+    white-space: nowrap;
+    height: 350px;
+}
+.result-list-row .internal li{
+    display: inline-block;
+}
+.list-navigation{
+    bottom: 35px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 300ms ease-in-out,visibility 300s 2s;
+    transition: opacity 300ms ease-in-out,visibility 300s 2s;
+    visibility: hidden;
+    width: 100px;
+    z-index: 1000;
+    -webkit-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+.list-navigation button{
+    background:#fff;
+    cursor: pointer;
+}
+.list-navigation.swipe-lft{
+    background: linear-gradient(to right,#fff,rgba(255,255,255,0));
+}
+.list-navigation.swipe-rgt{
+    right:0;
+    background: linear-gradient(to left,#fff,rgba(255,255,255,0));
+}
+.swipe-lft.visible,.swipe-rgt.visible{
+    visibility: visible;
+    opacity:1;
+}
+/*=================================================
+END OF SEARCH RESULT CSS
+===================================================*/
+
+
+/*=================================================
+START OF GAME DETAILS CSS
+===================================================*/
+
+.game-bg-video {
+    position: fixed;
+    height: 50%;
+    top: 0;
+    opacity:0;
+    left: 80px;
+    right: 80px;
+    background: url('../Assets/Images/splash_art04.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.game-bg-video .play-trailer {
+    left: calc(50% - 28px);
+    top: 50%;
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.game-bg-video .buy-now-section {
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+.game-bg-video .buy-now-section button {
+    background: #fff;
+}
+
+.game-bg-video .buy-now-section .more-option {
+    color: white;
+}
+
+.game-info-content-a {
+
+}
+.sys-req{
+    padding:20px;
+    background:#fafafa;
+    box-shadow:0 1px 3px 0 rgba(20,20,20,0.4);
+}
+.sys-req span{
+    font-size:16px;
+}
+
+/*=================================================
+END OF GAME DETAILS CSS
+===================================================*/
+
+/*=================================================
+START OF CART CSS
+===================================================*/
+
+.for-nodata{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    text-transform: none;
+}
+
+.empty-cart-banner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+.empty-cart-banner img {
+    width: 200px;
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+
+.empty-cart-banner p {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.cart-container {
+    padding: 2rem;
+    width: 100%;
+}
+
+.cart-item-outer {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item-outer img {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.cart-item-heading {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.cart-item-outer p, .cart-item-outer h4 {
+    margin: 10px 0;
+}
+
+.cart-item-outer p i {
+    font-size: 22px;
+}
+
+.cart-item-outer h4 {
+    color: #000;
+}
+
+.qty-picker {
+    padding: 10px 0;
+}
+
+.qty-picker > button {
+    min-width: 30px;
+    padding: 0 6px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.qty-picker > button > i {
+    font-size: 18px;
+}
+
+.qty-picker > input {
+    width: 40%;
+    margin: 0 5px;
+    padding: 0 6px;
+    height: 28px;
+    text-align: center;
+    border-radius: 3px;
+    vertical-align: top;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: #efefef;
+}
+
+.star-ratings-css {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 20px;
+    height: 20px;
+    width: 84px;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    text-shadow: 0px 1px 0 #a2a2a2;
+}
+
+.star-ratings-css-top {
+    color: #50a46d;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.star-ratings-css-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
+
+/*=================================================
+END OF CART CSS
+===================================================*/
+
+
+/*=================================================
+START OF PURCHASE LIST CSS
+===================================================*/
+
+.purchase-list{
+    background: #fff;
+    /*border:1px solid #ccc;*/
+    box-shadow: 0 0 2px 0 rgba(50,50,50,0.2);
+}
+
+/*=================================================
+END OF PURCHASE LIST CSS
+===================================================*/
+
+.account-group {
+    position: relative;
+    padding: 5px 15px;
+    line-height: 0;
+    border-radius: 4px;
+}
+
+.account-group i {
+    padding-right: 10px;
+}
+
+

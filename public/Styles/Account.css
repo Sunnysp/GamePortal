@@ -1,0 +1,106 @@
+hr{
+    width:100%;
+    border-top: 1px solid #e4e4e4;
+}
+
+
+
+
+/*=================================================
+START OF PROFILE STATUS CSS
+===================================================*/
+.marg-l20{
+    margin-left:20px;
+}
+.user-profile-wrapper{
+    padding:5% 0;
+}
+.profile-info{
+    width:50%;
+    margin:0 auto;
+    height:auto;
+    padding:20px ;
+    overflow:hidden;
+    border-radius: 2px;
+}
+.profile-info .prof-heading{
+    display:block;
+    position:relative;
+    margin-bottom:0;
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 400;
+}
+.prof-heading:after{
+    position:absolute;
+    left:100%;
+    width:100%;
+    height:1px;
+    top:50%;
+    background:#ccc;
+}
+.pro-subsection{
+    overflow:hidden;
+    width: 100%;
+    font-size: 16px;
+}
+.pro-subsection p{
+    font-size: 16px;
+    color:gray;
+}
+.dropify-wrapper{
+    padding:0 !important;
+    border:none !important;
+}
+.file-icon>i{
+    font-size:inherit !important;
+}
+.dropify-message p{
+    font-size:16px;
+    width:70%;
+    margin:auto !important;
+}
+
+.prof-avatar{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+
+.md-profile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    min-width:200px;
+    background: #fff;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: right top 0px;
+    transition: all .3s cubic-bezier(.55,0,.55,.2);
+    transition-duration: 250ms;
+}
+
+.md-profile-menu.open {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: right top 0px;
+    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    transition-duration: .2s;
+}
+
+.md-profile-menu>* {
+    opacity: 1;
+    transition: all .3s cubic-bezier(.55,0,.55,.2);
+    transition-duration: .2s;
+    transition-delay: .1s;
+}
+.md-profile-menu li span {
+    text-transform: none;
+}
+.md-profile-menu li:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}

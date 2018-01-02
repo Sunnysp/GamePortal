@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><img src="../Assets/Images/logo.png" class="v-gap"/> Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-top-search-group" id="searchfield">
+        <i class="material-icons">&#xE8B6;</i>
+        <form><input type="text" placeholder="Search" id="autocomplete" class="biginput"/></form>
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href=""><div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">notifications</div></a>
+        <a class="mdl-navigation__link" href=""><div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">&#xE8CC;</div></a>
+        <!--<a class="mdl-navigation__link account-group" href=""><i class="material-icons">account_circle</i><span>User Firstname</span></a>-->
+        <a class="mdl-navigation__link cl408c73" href="../Views/Login.html">Sign in</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href=""><i class="material-icons">home</i>Home</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <a class="mdl-navigation__link" href="#" id="wishlist" onfocus="openToolTip(this);"><i class="material-icons">&#xE87D;</i>My wishlist</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE889;</i>Purchase history</a>
+
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8B8;</i>Settings</a>
+      <a class="mdl-navigation__link" href="#" onclick="openModalPopup('sendFeedback')"><i class="material-icons">&#xE87F;</i>Send feedback</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE887;</i>FAQ</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+
+      <div class="mdl-grid welcome-banner">
+        <div class="mdl-cell mdl-cell--12-col ">
+
+          <h3>Welcome to google material design</h3>
+          <p class="banner-sub-heading">Explore the varieties of components</p>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            JOIN US
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect marg-lf">
+            explore
+          </button>
+
+
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored read-more-btn">
+            <i class="material-icons">keyboard_arrow_down</i>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="mdl-grid components-wrapper">
+        <div class="mdl-cell mdl-cell--12-col text-center">
+          <h2 class="section-component-heading">More than 1000 games in one place</h2>
+          <p class="section-para">Get varieties of games from different genre.</p>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            explore now
+          </button>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <img src="../Assets/Images/collage-2017-10-19.png" width=""/>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col text-center">
+          <h2 class="section-component-heading">Supported on</h2>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col text-center">
+          <ul class="platform-list">
+            <li><img src="../Assets/Images/desktop-laptop-notebook-pc-icon-33.jpg" width="80dp" /><br><span>Windows</span></li>
+            <li><img src="../Assets/Images/play_station1600.png" width="60dp" /><br><span>PS3, PS4</span></li>
+            <li><img src="../Assets/Images/media.svg" width="50dp" /><br><span>XBox</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mdl-grid grid-2">
+        <div class="mdl-cell mdl-cell--6-col section">
+          <h2 class="section-component-heading">Find your games faster</h2>
+          <p class="section-para">Our games are well organised and can be searchable by genre, release date, platform, publisher etc. </p>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col section">
+
+        </div>
+      </div>
+
+      <div class="mdl-grid bg448aff">
+        <div class="mdl-cell mdl-cell--12-col text-center test-gear">
+          <h2 class="section-component-heading">Test your gears</h2>
+          <p class="section-para">Never waste money buying games which you cannot run.<br>Compare your system specs with the games system requirement to know whether you can able to run that game in your system or not.</p>
+
+          <button class="mdl-button mdl-js-button mdl-button--raised ">
+            start test
+          </button>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col text-center">
+          <img src="../Assets/Images/Desktop-Retina.png" width="350"/>
+        </div>
+      </div>
+
+      <div class="mdl-grid grid-3">
+        <div class="mdl-cell mdl-cell--12-col text-center">
+          <h2 class="section-component-heading">Games from top publishers</h2>
+          <p class="section-para"></p>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col text-center publisher-preview-container">
+          <div class="publisher-preview-list text-center">
+            <img src="../Assets/Images/6810_ubisoft-prev-500x500.png" />
+          </div>
+          <div class="publisher-preview-list text-center">
+            <img src="../Assets/Images/earts.png" />
+          </div>
+          <div class="publisher-preview-list text-center">
+            <img src="../Assets/Images/free-vector-konami-logo_091045_Konami_logo.png" />
+          </div>
+          <div class="publisher-preview-list text-center">
+            <img src="../Assets/Images/IO_OldLogo.png" />
+          </div>
+          <div class="publisher-preview-list text-center">
+            <img src="../Assets/Images/dc138a6d2e9413be1e7d3930e39e2d33.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-grid ">
+        <div class="mdl-cell mdl-cell--6-col section text-center">
+          <img src="../Assets/Images/payment-mockup.png"  />
+        </div>
+        <div class="mdl-cell mdl-cell--6-col   section">
+          <h2 class="section-component-heading">Go cashless</h2>
+          <p class="section-para">Make your payment more easy and safe with our payment gateway.<br>You can pay your ride with Credit/Debit.</p>
+        </div>
+      </div>
+
+
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__middle-section">
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Features</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Details</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Specs</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Technology</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Patterns</a></li>
+              <li><a href="#">Usage</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contracts</a></li>
+            </ul>
+          </div>
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">FAQ</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Questions</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-logo">Title</div>
+          <ul class="mdl-mega-footer__link-list fl-left">
+            <li><a href="#">Help</a></li>
+            <li><a href="Terms.html">Privacy & Terms</a></li>
+          </ul>
+
+          <ul class="mdl-mega-footer__link-list fl-right">
+            <li><div class="mdl-logo">Follow us</div></li>
+            <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+
+      </footer>
+      </div>
+
+    <div class="dialog-wrapper" id="sendFeedback">
+      <div class="mdl-grid dialog-main confirmation-dialog">
+
+        <div class="mdl-cell mdl-cell--12-col dialog-header">
+          <h3 class="modal-title">Send feedback</h3>
+        </div>
+
+        <div class="mdl-cell mdl-cell--12-col dialog-body">
+          <textarea placeholder="Share your ideas and help us to improve our service" class="mdl-textarea"
+                    autofocus></textarea>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-footer text-right">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            cancel
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            send
+          </button>
+        </div>
+      </div>
+    </div>
+	
+  </main>
+<div class='tooltip-outer'>
+  <button class="mdl-button mdl-js-button mdl-button--icon fl-right">
+    <i class="material-icons">close</i>
+  </button>
+	  <h5>Login to get access</h5>
+	  <p>This section is only available to logged in user.Login with your existing account else create a new one.</p>
+	  
+	  <button class="mdl-button mdl-js-button mdl-js-ripple-effect fl-right" onclick="window.location.href='../Views/Login.html'">
+            login now
+    </button>
+</div>
+
+</div>
+
+
+
+
+
+<script defer src="../Scripts/material.min.js"></script>
+<script type="text/javascript" src="../Scripts/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../Scripts/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="../Scripts/currency-autocomplete.js"></script>
+<script src="../Scripts/basic-utility.js"></script>
+<script src="../Scripts/modal-script.js"></script>
+<!--<script src="../Scripts/data.js"></script>-->
+<script>
+
+  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(33);
+    this.MaterialProgress.setBuffer(87);
+  });
+/* script for snackbar*/
+  (function() {
+    'use strict';
+    var snackbarContainer = document.querySelector('#demo-snackbar-example');
+    var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+    var handler = function(event) {
+      showSnackbarButton.style.backgroundColor = '';
+    };
+    showSnackbarButton.addEventListener('click', function() {
+      'use strict';
+      showSnackbarButton.style.backgroundColor = '#' +
+        Math.floor(Math.random() * 0xFFFFFF).toString(16);
+      var data = {
+        message: 'Button color changed.',
+        timeout: 2000,
+        actionHandler: handler,
+        actionText: 'Undo'
+      };
+      snackbarContainer.MaterialSnackbar.showSnackbar(data);
+    });
+  }());
+
+  window.onload = function() {
+    buildTBody(table_data);
+  }
+
+  function buildTBody(data) {
+    data.forEach( function(o) {
+      var _tr = document.createElement('tr');
+      Object.keys(o).forEach( function(h) {
+        var _td = document.createElement('td');
+        _td.innerHTML = o[h];
+        _tr.appendChild(_td);
+      });
+      document.getElementsByTagName('tbody')[0].appendChild(_tr);
+    })
+  }
+  
+
+</script>
+</body>
+</html>

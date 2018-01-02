@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+  <link rel="stylesheet" href="../Styles/Account.css">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-top-search-group">
+        <i class="material-icons">&#xE8B6;</i>
+        <input type="text" placeholder="Search"/>
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">notifications</div>
+        </a>
+        <a class="mdl-navigation__link account-group" href="#" onclick="openPopupDrop('MyCart',event)">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">&#xE8CC;</div>
+
+          <div class="demo-list-item mdl-list md-profile-menu " id="MyCart">
+
+            <div class="for-nodata">
+              <div>
+                <img src="../Assets/Images/empty-cart.png" width="150dp"/>
+                <h6 class="no-marg">No item in your cart</h6>
+                <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect  mdl-button--colored">
+                  Start shopping
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </a>
+        <!--<a class="mdl-navigation__link account-group" href=""><i class="material-icons">account_circle</i><span>User Firstname</span></a>-->
+        <a class="mdl-navigation__link cl408c73 account-group" href="#" onclick="openPopupDrop('UserAccount',event)">Sign
+          in
+
+          <ul class="demo-list-item mdl-list md-profile-menu" id="UserAccount">
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                My account
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Sign out
+              </span>
+            </li>
+          </ul>
+
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer for-custom-scroll">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href=""><i class="material-icons">home</i>Home</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE021;</i>Browse</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8CC;</i>My cart</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87D;</i>My wishlist</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE889;</i>Purchase history</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8A1;</i>My wallet & cards</a>
+      <hr>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE8B8;</i>Settings</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE87F;</i>Send feedback</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE887;</i>FAQ</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content user-profile-wrapper"><!-- Your content goes here -->
+      <section class="mdl-grid profile-info">
+        <div class="mdl-cell mdl-cell--12-col text-center">
+          <img src="../Assets/Images/profile-avatar-empty.png" class="prof-avatar"/>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col text-center">
+          <h5>Demo Username</h5>
+          <p class="color-gray">Site@domainname.com</p>
+        </div>
+
+      </section>
+
+      <section class="mdl-grid profile-info">
+        <div class="mdl-cell mdl-cell--11-col">
+          <span class="prof-heading">Personal info</span>
+        </div>
+        <div class="mdl-cell mdl-cell--1-col">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="section1" onclick="openModalPopup('changePersonalInfo');">
+            <i class="material-icons">edit</i>
+          </button>
+        </div>
+
+        <div class="mdl-grid pro-subsection" for="section1">
+          <div class="mdl-cell mdl-cell--3-col">
+            <span>First name</span>
+          </div>
+          <div class="mdl-cell mdl-cell--9-col">
+            <p>Some name</p>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col">
+            <span>Date of Birth</span>
+          </div>
+
+          <div class="mdl-cell mdl-cell--9-col">
+            <p>9 Jul 1994</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mdl-grid profile-info">
+        <div class="mdl-cell mdl-cell--11-col">
+          <span class="prof-heading">Contact info</span>
+        </div>
+        <div class="mdl-cell mdl-cell--1-col">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab expand-section" id="section2" onclick="openModalPopup('changeContactInfo')">
+            <i class="material-icons">edit</i>
+          </button>
+        </div>
+        <div class="mdl-grid pro-subsection" for="section2">
+          <div class="mdl-cell mdl-cell--3-col  text-left">
+            <span>Permanent address</span>
+          </div>
+          <div class="mdl-cell mdl-cell--9-col">
+            <p>full address line</p>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col  text-left">
+            <span>email address</span>
+          </div>
+          <div class="mdl-cell mdl-cell--9-col">
+            <p>site@domainname.com</p>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col  text-left">
+            <span>Phone number</span>
+          </div>
+          <div class="mdl-cell mdl-cell--9-col">
+            <p>+91 784592356</p>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-grid profile-info">
+        <div class="mdl-cell mdl-cell--11-col">
+          <span class="prof-heading">Security</span>
+        </div>
+        <div class="mdl-cell mdl-cell--1-col">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab expand-section" id="section3">
+            <i class="material-icons">edit</i>
+          </button>
+        </div>
+        <div class="mdl-grid pro-subsection" for="section3">
+          <div class="mdl-cell mdl-cell--12-col">
+            <label>Password</label>
+            <p>We keep your password protected from other users.You can change your password any time from here.</p>
+            <a class="text-link" onclick="openModalPopup('changePassword');">Change password</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="dialog-wrapper" id="changePersonalInfo">
+      <div class="mdl-grid dialog-main confirmation-dialog">
+        <div class="mdl-cell mdl-cell--12-col dialog-header">
+          <h3 class="modal-title">Change personal info</h3>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col dialog-body">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input required" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">First name</label>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col dialog-body">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input required" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Last name</label>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <label>Birthday</label>
+          <div class="mdl-textfield mdl-js-textfield width40">
+            <input class="mdl-textfield__input" type="number" id="d_input" onkeyup="validateDate(this,'day',2)" >
+            <label class="mdl-textfield__label" for="d_input">DD</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield width40">
+            <input class="mdl-textfield__input" type="number" id="m_input" onkeyup="validateDate(this,'month',2)" onblur="checkMonth()" >
+            <label class="mdl-textfield__label" for="m_input">MM</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield width60">
+            <input class="mdl-textfield__input" type="text" id="y_input" onkeyup="validateDate(this,'year',4)" >
+            <label class="mdl-textfield__label" for="y_input">YYYY</label>
+          </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--12-col dialog-footer text-right">
+          <button class="mdl-button mdl-js-button">
+            Cancel
+          </button>
+          <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect  mdl-button--colored" id="signin">
+            SAVE
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dialog-wrapper" id="changeContactInfo">
+      <div class="mdl-grid dialog-main confirmation-dialog">
+        <div class="mdl-cell mdl-cell--12-col dialog-header">
+          <h3 class="modal-title">Change contact</h3>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-body">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input required" type="password" id="sample3" autofocus>
+            <label class="mdl-textfield__label" for="sample3">Full address</label>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-body">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input email" type="email" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Email address</label>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col dialog-body">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input required" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Phone number</label>
+          </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--12-col dialog-footer text-right">
+          <button class="mdl-button mdl-js-button">
+            Cancel
+          </button>
+          <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect  mdl-button--colored" id="signin">
+            SAVE
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="dialog-wrapper" id="changePassword">
+      <div class="mdl-grid dialog-main confirmation-dialog">
+        <div class="mdl-cell mdl-cell--12-col dialog-header">
+          <h3 class="modal-title">Change your password</h3>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-body">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input required" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Old password</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input required" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">New password</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input required" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Re-enter new password</label>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-footer text-right">
+          <button class="mdl-button mdl-js-button">
+            Cancel
+          </button>
+          <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect  mdl-button--colored"
+                  id="signin">
+            SAVE
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="dialog-wrapper" id="uploadPhotoModal">
+      <div class="mdl-grid dialog-main confirmation-dialog">
+        <div class="mdl-cell mdl-cell--12-col dialog-header">
+          <h3 class="modal-title">Choose profile photo</h3>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-body">
+          <input type="file" id="input-file-now-custom-2" class="dropify"/>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col dialog-footer text-right">
+          <a href="#" class="text-link">CANCEL</a>
+          <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect  mdl-button--colored"
+                  id="signin">
+            DONE
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+<script defer src="../Scripts/material.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="../Scripts/basic-utility.js"></script>
+<script src="../Scripts/dropify.min.js"></script>
+<script src="../Scripts/modal-script.js"></script>
+<script src="../Scripts/validation.js"></script>
+<script>
+  $(document).ready(function () {
+    // Basic
+    $('.dropify').dropify();
+
+    // Translated
+    $('.dropify-fr').dropify({
+      messages: {
+        default: 'Glissez-déposez un fichier ici ou cliquez',
+        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+        remove: 'Supprimer',
+        error: 'Désolé, le fichier trop volumineux'
+      }
+    });
+
+    // Used events
+    var drEvent = $('#input-file-events').dropify();
+
+    drEvent.on('dropify.beforeClear', function (event, element) {
+      return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+    });
+
+    drEvent.on('dropify.afterClear', function (event, element) {
+      alert('File deleted');
+    });
+
+    drEvent.on('dropify.errors', function (event, element) {
+      console.log('Has Errors');
+    });
+
+    var drDestroy = $('#input-file-to-destroy').dropify();
+    drDestroy = drDestroy.data('dropify')
+    $('#toggleDropify').on('click', function (e) {
+      e.preventDefault();
+      if (drDestroy.isDropified()) {
+        drDestroy.destroy();
+      } else {
+        drDestroy.init();
+      }
+    })
+
+    $('.expand-section').click(function () {
+
+      var id = $(this).attr('id');
+      $('div[for="' + id + '"').toggleClass('expanded');
+    })
+
+  });
+</script>
+</body>
+</html>

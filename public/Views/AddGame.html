@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../Styles/material.min.css">
+  <link rel="stylesheet" href="../Styles/Style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+  <style>
+    .container{
+      width:70%;
+      margin:4rem auto;
+    }
+    .section-title{
+      padding:10px 25px;
+      width:20%;
+      position: relative;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+    }
+    .section-title::after{
+      content:'';
+      position:absolute;
+      width:1000px;
+      height:1px;
+      top:50%;
+      left:calc(100% + 10px);
+      background: #ccc;
+    }
+    .input-box{
+      padding:15px;
+      border:none;
+      outline:none;
+      text-indent: 5px;
+      margin:15px 0;
+      background: #f8f8f8;
+      border-radius: 5px;
+      width:calc(100% - 30px);
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      transition: box-shadow 0.3s;
+    }
+    .input-box:focus{
+      box-shadow: 0 0 5px 0 rgba(10,10,10,0.1);
+    }
+  </style>
+
+
+</head>
+<body bgcolor="#eee">
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header" style="background: #448aff;color:#fff">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Add games</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <button class="mdl-button mdl-js-button mdl-button--raised"  disabled>
+          save
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content container">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col ">
+          <span class="section-title">Game details</span>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="Title">
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="Series">
+        </div>
+        <div class="mdl-cell mdl-cell--12-col ">
+          <input type="text" class="input-box" placeholder="Genre">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col ">
+          <input type="text" class="input-box" placeholder="Release date">
+        </div>
+        <div class="mdl-cell mdl-cell--5-col ">
+          <input type="text" class="input-box" placeholder="Platform(s)">
+        </div>
+        <div class="mdl-cell mdl-cell--4-col ">
+          <input type="text" class="input-box" placeholder="Publisher">
+        </div>
+
+      </div>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col ">
+          <span class="section-title">Upload trailer</span>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col ">
+          <input type="text" class="input-box" placeholder="Video link">
+        </div>
+      </div>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col ">
+          <span class="section-title">Requirement</span>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <h6>MINIMUM</h6>
+          <input type="text" class="input-box" placeholder="Processor">
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <h6>RECOMENDED</h6>
+          <input type="text" class="input-box" placeholder="Processor">
+        </div>
+
+
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="RAM">
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="RAM">
+        </div>
+
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="OS">
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="OS">
+        </div>
+
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="GPU">
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <input type="text" class="input-box" placeholder="GPU">
+        </div>
+      </div>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col ">
+          <span class="section-title">Photos</span>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col ">
+          <label>Game poster</label>
+          <input type="file" class="input-box" placeholder="Title">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col ">
+          <label>Artifacts photos</label>
+          <input type="text" class="input-box" placeholder="Series">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col ">
+          <input type="text" class="input-box" placeholder="Genre">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col ">
+          <input type="text" class="input-box" placeholder="Release date">
+        </div>
+        <div class="mdl-cell mdl-cell--5-col ">
+          <input type="text" class="input-box" placeholder="Platform(s)">
+        </div>
+        <div class="mdl-cell mdl-cell--4-col ">
+          <input type="text" class="input-box" placeholder="Publisher">
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+</div>
+
+
+<script defer src="../Scripts/material.min.js"></script>
+</body>
+</html>
