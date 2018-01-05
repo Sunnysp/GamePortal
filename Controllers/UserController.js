@@ -12,7 +12,7 @@ exports.registerUser = function(data){
     registerData.push(data.password);
     var con = dbConnection();
     if (con){
-        var query="INSERT INTO customers (name, fName, lName, Email, Password) VALUES (?,?,?,?,?);"
+        var query="INSERT INTO Users (firstName, lastName, Email, Password) VALUES (?,?,?,?);"
         con.query(query, registerData, function(err,result){
             if(!err)
                 console.log(JSON.stringify(result))
