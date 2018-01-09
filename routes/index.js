@@ -33,7 +33,7 @@ router.get('/login', function (req, res) {
 router.all('/SignIn', function (req, res) {
 // var authenticated=false;
 
-    req.body.Email="df@df.com";
+    // req.body.Email="df@df.com";
     //checking seesion
     console.log("req.body........",req.body);
     console.log("req.router........",req.router);
