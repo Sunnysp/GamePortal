@@ -21,3 +21,19 @@ exports.registerUser = function(data){
         })
     }
 }
+
+exports.logIn = function (data, callback) {
+    var loginData=[];
+    loginData.push(data.Email);
+    // loginData.push(data.Password);
+    var con = dbConnection();
+    if(con){
+        var query = "SELECT * FROM Users WHERE Email=?";
+        con.query(query, loginData, function (err, result) {
+            if(!err)
+                callback(result);
+            else
+                throw err;
+        })
+    }
+}
