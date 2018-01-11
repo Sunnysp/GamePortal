@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f2e034d-c7c5-4d99-8954-54be8ffcde08" name="Default" comment="n">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/Views/Login.html" afterPath="$PROJECT_DIR$/public/Views/Login.html" />
+      <change beforePath="$PROJECT_DIR$/Controllers/UserController.js" afterPath="$PROJECT_DIR$/Controllers/UserController.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/Views/Login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
@@ -70,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-51">
@@ -245,12 +245,12 @@
       <workItem from="1514909852112" duration="9295000" />
       <workItem from="1515482473030" duration="1149000" />
       <workItem from="1515510962634" duration="3181000" />
-      <workItem from="1515664096006" duration="2507000" />
+      <workItem from="1515664096006" duration="2656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39524000" />
+    <option name="totallyTimeSpent" value="39673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -670,18 +670,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/UserController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Views/Login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="110" column="24" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>
