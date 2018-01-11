@@ -36,17 +36,17 @@
             </div>
             <div class="mdl-cell mdl-cell--12-col">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input required email" type="text" id="sample3" autofocus
+                <input class="mdl-textfield__input required email" type="text" id="emailInput" autofocus
                        onchange="showError(this,false);" onkeypress="showError(this,false);">
-                <label class="mdl-textfield__label" for="sample3">Email</label>
+                <label class="mdl-textfield__label" for="emailInput">Email</label>
               </div>
               <span class="error-msg">Please enter a valid email</span>
             </div>
             <div class="mdl-cell mdl-cell--12-col">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input required" type="password" id="sample3"
+                <input class="mdl-textfield__input required" type="password" id="passwordInput"
                        onchange="showError(this,false);" onkeypress="showError(this,false);">
-                <label class="mdl-textfield__label" for="sample3">Password</label>
+                <label class="mdl-textfield__label" for="passwordInput">Password</label>
               </div>
               <span class="error-msg">Please enter a valid password</span>
             </div>
@@ -100,6 +100,20 @@
         $('.mdl-progress').show();
         $('.login-panel').css({'opacity':'0.5'});
         //make ajax call here
+          $.ajax({
+              type:"POST",
+              url:'/SignIn',
+              data: {
+                  Email: $('#emailInput').val(),
+                  Password: $('#passwordInput').val()
+              },
+              success:function(response){
+                  $('.mdl-progress').hide();
+              },
+              error:function(response){
+
+              }
+          });
         generateNotificationToast("Sorry, we couldnot able to find your account");
       }
     })

@@ -12,7 +12,7 @@ var dbConnection = function(){
         var connection=connectDb(con, mysql, {
             host:"localhost",
             user:"root",
-            password:"root",
+            password:"",
             database:"newdb"
         });
         isConAlive=connection.isAlive;

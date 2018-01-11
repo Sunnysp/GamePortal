@@ -5,7 +5,7 @@ var dbConnection = require('../DbHandler/DbManager');
 exports.registerUser = function(data){
     var fullName = data.firstName+" "+data.lastName;
     var  registerData=[];
-    registerData.push(fullName);
+    //registerData.push(fullName);
     registerData.push(data.firstName);
     registerData.push(data.lastName);
     registerData.push(data.email);
@@ -25,10 +25,10 @@ exports.registerUser = function(data){
 exports.logIn = function (data, callback) {
     var loginData=[];
     loginData.push(data.Email);
-    // loginData.push(data.Password);
+    loginData.push(data.Password);
     var con = dbConnection();
     if(con){
-        var query = "SELECT * FROM Users WHERE Email=?";
+        var query = "SELECT * FROM Users WHERE Email=? and password=?";
         con.query(query, loginData, function (err, result) {
             if(!err)
                 callback(result);

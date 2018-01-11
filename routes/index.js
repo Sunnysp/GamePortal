@@ -35,10 +35,10 @@ router.all('/SignIn', function (req, res) {
 
     // req.body.Email="df@df.com";
     //checking seesion
-    console.log("req.body........",req.body);
-    console.log("req.router........",req.router);
-    console.log("req.header........",req.header.username);
-    console.log("res.data........",res.data);
+    //console.log("req.body........",req.body);
+    //console.log("req.router........",req.router);
+    //console.log("req.header........",req.header.username);
+    //console.log("res.data........",res.data);
     // console.log("res.body........",JSON.stringify(res.));
     // console.log("response..........",res);
 
