@@ -28,7 +28,7 @@ exports.logIn = function (data, callback) {
     loginData.push(data.Password);
     var con = dbConnection();
     if(con){
-        var query = "SELECT * FROM Users WHERE Email=? and password=?";
+        var query = "SELECT * FROM Users WHERE Email=? and Password=?";
         con.query(query, loginData, function (err, result) {
             if(!err)
                 callback(result);
