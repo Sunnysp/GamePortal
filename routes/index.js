@@ -60,6 +60,12 @@ router.all('/SignIn', function (req, res) {
     })*/
 })
 
+router.get("/browsegame", function (req, res) {
+    res.sendFile(path.join(baseDirectory, "public/Views", "BrowseGames.html"));
+})
 
+router.get("/gamedetails", function (req, res) {
+    res.sendfile(path.join(baseDirectory, "public/Views", "GameDetails.html"));
+})
 
 module.exports = router;

@@ -108,8 +108,10 @@
                         Password: $('#passwordInput').val()
                     },
                     success: function (response) {
-                        if (response)
-                            $('.mdl-progress').hide();
+                        if (response) {
+                        $('.mdl-progress').hide();
+                        $('.login-panel').css({'opacity': '1'});
+                    }
                         else
                             generateNotificationToast("Sorry, we couldnot able to find your account");
                     },
